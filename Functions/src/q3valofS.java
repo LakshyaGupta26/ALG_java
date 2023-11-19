@@ -7,13 +7,13 @@ public class q3valofS {
         int n = scanner.nextInt();
         System.out.print("Enter the value of m: ");
         int m = scanner.nextInt();
-        long result = calculateCombination(n, m);
+        long result = calc(n, m);
         System.out.println("The value of S is: " + result);
     }
-    static long calculateCombination(int n, int m) {
-        long numerator = fact(n);
-        long denominator = fact(m) * fact(n - m);
-        return numerator / denominator;
+    static long calc(int n, int m) {
+        long numer = fact(n);
+        long deno = fact(m) * fact(n - m);
+        return numer / deno;
     }
     static long fact(int x) {
         if (x == 0 || x == 1) {
